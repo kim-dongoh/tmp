@@ -50,6 +50,7 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
+<!-- 포스트 작성일 / 카테고리 출력
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
@@ -57,8 +58,11 @@ layout: default
         {% include page__taxonomy.html %}
         {% include page__date.html %}
       </footer>
+-->
 
+<!-- 소셜 미디어 공유
       {% if page.share %}{% include social-share.html %}{% endif %}
+-->
 
       {% include post_pagination.html %}
     </div>
@@ -92,5 +96,5 @@ layout: default
       </div>
     </div>
   {% endif %}
-  -->
+-->
 </div>
