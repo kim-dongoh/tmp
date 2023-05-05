@@ -293,4 +293,4 @@ defaults:                   # 페이지의 머리말에 선언하지 않아도 �
       related: true         # 관련 포스트 추천 활성화
       toc: true             # 현재 페이지의 목차 활성화
       sidebar:              # 블로그 목차 보기(Custom)
-        nav: main-sidebar     # /_data/navigation.yml에 main-sidebar의 내용을 정의(Custom)
+        nav: main     # /_data/navigation.yml에 main의 내용을 정의(Custom)
