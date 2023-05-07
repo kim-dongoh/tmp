@@ -9,4 +9,4 @@ sidebar:
   nav: docs
 ---
 {% assign posts = site.categories.secret_engine %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}

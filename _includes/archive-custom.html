@@ -24,7 +24,11 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+<!-- Posts List 나타낼 시 메타정보 함께 노출
     {% include page__meta.html type=include.type %}
+-->
+<!-- Posts List 나타낼 시 Post의 내용도 함께 노출
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+-->
   </article>
 </div>
