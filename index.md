@@ -1,6 +1,7 @@
 ---
 layout: home
-author_profile: true
+parmalink: /
 sidebar:
   nav: "docs"
+author_profile: true
 ---

@@ -13,10 +13,8 @@ main:
 
 docs:
 - title: "Vault"
-  url: /vault/
   children:
-  - title:  "Secret Engine"
+  - title: "Secret Engine"
     url:  /vault/secret_engine/
-    children:
-    - title: "PKI"
-      url: /vault/secret_engine/pki/      
+  - title: "Auth Method"
+    url: /vault/auth_method/
