@@ -10,3 +10,13 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+- title: "Vault"
+  url: /vault/
+  children:
+  - title:  "Secret Engine"
+    url:  /vault/secret_engine/
+    children:
+    - title: "PKI"
+      url: /vault/secret_engine/pki/      
