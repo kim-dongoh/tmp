@@ -292,5 +292,6 @@ defaults:                   # 페이지의 머리말에 선언하지 않아도 �
       share: true           # 소셜 공유 기능 활성화
       related: true         # 관련 포스트 추천 활성화
       toc: true             # 현재 페이지의 목차 활성화
+      toc_sticky: true      # 목차 스크롤 고정
       sidebar:              # 블로그 목차 보기(Custom)
         nav: docs     # /_data/navigation.yml에 main의 내용을 정의(Custom)
