@@ -40,4 +40,4 @@ resource "<Resource Type>" "<Resource Name>" {
 * `key_name`: SSH 접속 시 사용할 개인키와 대칭되는 AWS에 저장된 공개키 명
   * EC2 -> 사이드바 키 페어 -> 이름
 * `vpc_security_group_ids`: Instance에 적용할 보안 그룹의 ID 리스트
-  * 해당 코드는 default란 Data Source 명을 가진 [`aws_security_group` Data Source를 참조](kim-dongoh.github.io/terraform/data_source/_posts/2023-05-10-aws_security_group.md)하여 보안 그룹 ID를 지정
+  * 해당 코드는 default란 Data Source 명을 가진 [aws_security_group Data Source](kim-dongoh.github.io/terraform/data_source/aws_security_group)를 참조하여 보안 그룹 ID를 지정
