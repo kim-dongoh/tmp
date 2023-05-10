@@ -27,5 +27,7 @@ docs:
     url: /terraform/install/
   - title: "Provider"
     url: /terraform/provider/
+  - title: "Data Source"
+    url: /terraform/data_source/
   - title: "Resource"
     url: /terraform/resource/
