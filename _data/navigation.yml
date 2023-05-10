@@ -1,4 +1,4 @@
-# main links
+#main links
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
@@ -14,7 +14,14 @@ main:
 docs:
 - title: "Vault"
   children:
-  - title: "Secret Engine"
-    url:  /vault/secret_engine/
+  - title: "Install"
+    url: /vault/install/
   - title: "Auth Method"
     url: /vault/auth_method/
+  - title: "Secret Engine"
+    url: /vault/secret_engine/
+
+- title: "Terraform"
+  children:
+  - title: "Install"
+    url: /terraform/install/

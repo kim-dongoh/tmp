@@ -1,6 +1,5 @@
 ---
 title: "Secret Engine"
-parmalink: /vault/secret_engine/
 
 layout: single
 author_profile: true

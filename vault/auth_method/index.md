@@ -1,6 +1,5 @@
 ---
 title: "Auth Method"
-parmalink: /vault/auth_method/
 
 layout: single
 author_profile: true
