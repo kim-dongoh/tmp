@@ -25,5 +25,7 @@ docs:
   children:
   - title: "Install"
     url: /terraform/install/
+  - title: "Provider"
+    url: /terraform/provider/
   - title: "Resource"
     url: /terraform/resource/
