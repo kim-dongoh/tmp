@@ -1,6 +1,6 @@
 ---
 title: aws_instance
-post-order: 1
+order: 1
 ---
 
 ## 1. AWS Provider 정의
@@ -21,6 +21,9 @@ vi main.tf
 resource "<Resource Type>" "<Resource Name>" {
   ami = "<AMI ID>"
   instance_type = "<Instance Type>"
+  root_block_device {
+    volume_size = "<Storage Size>"
+  }
   tags = {
   	<Key> = <Value>
   }
@@ -40,6 +43,8 @@ resource "<Resource Type>" "<Resource Name>" {
 
 * `instance_type`: Instance의 Type을 지정
   * ex) `t2.micro`
+* `root_block_device`: Instance가 사용할 Storage를 설정
+  * `volume_size`: Storage의 용량을 지정 (단위: GiIB)
 * `tags`: `Key = Value` 형식의 AWS 지원 태그 지정 가능
   * ex.) `Name = Test_Instance`
 * `key_name`: SSH 접속 시 사용할 개인키와 대칭되는 AWS에 저장된 공개키 명

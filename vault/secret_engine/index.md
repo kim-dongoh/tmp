@@ -7,5 +7,7 @@ toc: false
 sidebar:
   nav: docs
 ---
-{% assign posts = site.categories.secret_engine %}
-{% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}
+{% assign sorted_posts = site.categories.secret_engine | sort:"order" %}
+{% for post in sorted_posts %}
+  <li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endfor %}

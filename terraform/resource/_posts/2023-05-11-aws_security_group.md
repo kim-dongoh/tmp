@@ -1,6 +1,6 @@
 ---
 title: aws_security_group
-post-order: 2
+order: 2
 ---
 
 ## 1. AWS Provider 정의

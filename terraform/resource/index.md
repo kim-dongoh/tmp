@@ -8,5 +8,7 @@ sidebar:
   nav: docs
 ---
 
-{% assign posts = site.categories.resource %}
-{% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}
+{% assign sorted_posts = site.categories.resource | sort:"order" %}
+{% for post in sorted_posts %}
+  <li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endfor %}

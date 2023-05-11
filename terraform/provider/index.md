@@ -6,9 +6,9 @@ author_profile: true
 toc: false
 sidebar:
   nav: docs
-
 ---
 
-{% assign posts = site.categories.provider %}
-{% for post in posts %} {% include archive-custom.html type=page.entries_layout %} {% endfor %}
-
+{% assign sorted_posts = site.categories.provider | sort:"order" %}
+{% for post in sorted_posts %}
+  <li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endfor %}
