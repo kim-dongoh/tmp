@@ -37,6 +37,13 @@ resource "<Resource Type>" "<Resource Name>" {
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 }
 ```
 
@@ -46,8 +53,13 @@ resource "<Resource Type>" "<Resource Name>" {
 * `Resource Name`: 해당 Resource의 이름을 정의
 * `tags`: `Key = Value` 형식의 AWS 지원 태그 지정 가능
   * ex.) `Name = SSH_Security_group`
-* `ingress`: AWS 보안 그룹의 인바운드 규칙, 복수 생성하여 복수개의 Port 지정 가능
+* `ingress`: AWS 보안 그룹의 인바운드 규칙, 복수 생성하여 복수 Port 지정 가능
   * `from_port`: 인바운드 규칙으로 지정할 시작 Port 지정
   * `to_port`: 인바운드 규칙으로 지정할 마지막 Port 지정
     * ex.) `form_port = 10`, `to_port = 20`으로 지정 시 Port 10 ~ Port 20까지의 Port Open
-* `cidr_blocks`: CIDR 리스트 설정
+  * `cidr_blocks`: CIDR 리스트 설정
+
+* `egress`: AWS 보안 그룹의 아웃바운드 규칙, 복수 생성하여 복수 Port 지정 가능
+  * `from_port`, `to_port`: 전체 포트 범위를 지정하고 싶므면 `0`으로 지정
+  * `protocol`: `-1`로 지정시 `all`을 뜻함.
+    * 이 경우 반드시 `from_port`, `to_port`는 `0`으로 지정
