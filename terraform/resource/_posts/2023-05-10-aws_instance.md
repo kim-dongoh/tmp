@@ -21,6 +21,9 @@ vi main.tf
 resource "<Resource Type>" "<Resource Name>" {
   ami = "<AMI ID>"
   instance_type = "<Instance Type>"
+  tags = {
+  	<Key> = <Value>
+  }
   key_name = "<Public Key Name>"
   vpc_security_group_ids = [
     data.aws_security_group.default.id
@@ -37,6 +40,8 @@ resource "<Resource Type>" "<Resource Name>" {
 
 * `instance_type`: Instance의 Type을 지정
   * ex) `t2.micro`
+* `tags`: `Key = Value` 형식의 AWS 지원 태그 지정 가능
+  * ex.) `Name = Test_Instance`
 * `key_name`: SSH 접속 시 사용할 개인키와 대칭되는 AWS에 저장된 공개키 명
   * EC2 -> 사이드바 키 페어 -> 이름
 * `vpc_security_group_ids`: Instance에 적용할 보안 그룹의 ID 리스트
