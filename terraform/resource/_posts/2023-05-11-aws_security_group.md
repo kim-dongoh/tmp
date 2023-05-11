@@ -23,9 +23,17 @@ resource "<Resource Type>" "<Resource Name>" {
   tags = {
   	<Key>	=	"<Value>"
   }
+  
   ingress {
     from_port = 22
     to_port = 22
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  
+  ingress {
+    from_port = 80
+    to_port = 80
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -38,7 +46,7 @@ resource "<Resource Type>" "<Resource Name>" {
 * `Resource Name`: 해당 Resource의 이름을 정의
 * `tags`: `Key = Value` 형식의 AWS 지원 태그 지정 가능
   * ex.) `Name = SSH_Security_group`
-* `ingress`: AWS 보안 그룹의 인바운드 규칙
+* `ingress`: AWS 보안 그룹의 인바운드 규칙, 복수 생성하여 복수개의 Port 지정 가능
   * `from_port`: 인바운드 규칙으로 지정할 시작 Port 지정
   * `to_port`: 인바운드 규칙으로 지정할 마지막 Port 지정
     * ex.) `form_port = 10`, `to_port = 20`으로 지정 시 Port 10 ~ Port 20까지의 Port Open
