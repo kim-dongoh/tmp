@@ -36,3 +36,8 @@ docs:
   children:
   - title: "Install"
     url: /documents/terraform_enterprise/install/
+
+- title: "Docker"
+  children:
+  - title: "Install"
+    url: /documents/docker/install/
