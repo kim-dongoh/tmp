@@ -15,19 +15,24 @@ docs:
 - title: "Vault"
   children:
   - title: "Install"
-    url: /vault/install/
+    url: /documents/vault/install/
   - title: "Auth Method"
-    url: /vault/auth_method/
+    url: /documents/vault/auth_method/
   - title: "Secret Engine"
-    url: /vault/secret_engine/
+    url: /documents/vault/secret_engine/
 
 - title: "Terraform"
   children:
   - title: "Install"
-    url: /terraform/install/
+    url: /documents/terraform/install/
   - title: "Provider"
-    url: /terraform/provider/
+    url: /documents/terraform/provider/
   - title: "Data Source"
-    url: /terraform/data_source/
+    url: /documents/terraform/data_source/
   - title: "Resource"
-    url: /terraform/resource/
+    url: /documents/terraform/resource/
+
+- title: "Terraform Enterprise"
+  children:
+  - title: "Install"
+    url: /documents/terraform_enterprise/install/
