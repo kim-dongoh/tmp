@@ -5,7 +5,7 @@ post-order: 1
 
 ## 1. AWS Provider 정의
 
- [AWS Provider](http://kim-dongoh.github.io/terraform/provider/aws/) 참조
+ [AWS Provider](http://kim-dongoh.github.io/documents/terraform/provider/aws/) 참조
 
 
 
