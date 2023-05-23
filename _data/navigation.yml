@@ -1,9 +1,9 @@
 #main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "HashiCorp"
+    url: /documents/hashicorp/
+  - title: "Container"
+    url: /documents/container/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -11,32 +11,33 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-docs:
+hashicorp:
 - title: "Vault"
   children:
   - title: "Install"
-    url: /documents/vault/install/
+    url: /documents/hashicorp/vault/install/
   - title: "Auth Method"
-    url: /documents/vault/auth_method/
+    url: /documents/hashicorp/vault/auth_method/
   - title: "Secret Engine"
-    url: /documents/vault/secret_engine/
+    url: /documents/hashicorp/vault/secret_engine/
 
 - title: "Terraform"
   children:
   - title: "Install"
-    url: /documents/terraform/install/
+    url: /documents/hashicorp/terraform/install/
   - title: "Provider"
-    url: /documents/terraform/provider/
+    url: /documents/hashicorp/terraform/provider/
   - title: "Data Source"
-    url: /documents/terraform/data_source/
+    url: /documents/hashicorp/terraform/data_source/
   - title: "Resource"
-    url: /documents/terraform/resource/
+    url: /documents/hashicorp/terraform/resource/
 
 - title: "Terraform Enterprise"
   children:
   - title: "Install"
-    url: /documents/terraform_enterprise/install/
+    url: /documents/hashicorp/terraform_enterprise/install/
 
+container:
 - title: "Docker"
   children:
   - title: "Install"
