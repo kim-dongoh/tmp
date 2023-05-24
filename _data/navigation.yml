@@ -4,8 +4,8 @@ main:
     url: /documents/hashicorp/
   - title: "Container"
     url: /documents/container/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Etc."
+    url: /documents/etc/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
@@ -42,3 +42,6 @@ container:
   children:
   - title: "Install"
     url: /documents/container/docker/install/
+
+etc:
+- title: "OpenSSL"
