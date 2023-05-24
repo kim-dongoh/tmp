@@ -11,6 +11,8 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
+home:
+
 hashicorp:
 - title: "Vault"
   children:
