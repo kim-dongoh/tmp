@@ -1,6 +1,6 @@
 ---
-title: Install
-permalink: /documents/container/docker/install/
+title: Install - Online
+permalink: /documents/container/docker/install-online/
 sidebar:
   nav: container
 ---

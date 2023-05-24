@@ -40,8 +40,10 @@ hashicorp:
 container:
 - title: "Docker"
   children:
-  - title: "Install"
-    url: /documents/container/docker/install/
+  - title: "Install - Online"
+    url: /documents/container/docker/install-online/
+  - title: "Install - Airgap"
+    url: /documents/container/docker/install-airgap/
 
 etc:
 - title: "OpenSSL"
