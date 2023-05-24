@@ -5,3 +5,6 @@ sidebar:
   nav: container
 ---
 
+## CentOS
+
+## Ubuntu
