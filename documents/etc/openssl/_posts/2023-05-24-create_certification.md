@@ -5,9 +5,9 @@ sidebar:
   nav: etc
 ---
 
-## CA 인증서
+## 1. CA 인증서
 
-### Root CA Key 생성
+### 1.1. Root CA Key 생성
 
 ```bash
 openssl genrsa -out ca.key 2048
@@ -19,7 +19,7 @@ chmod 600 ca.key
 
 
 
-### Root CA CSR 생성을 위한 Conf 파일
+### 1.2. Root CA CSR 생성을 위한 Conf 파일
 
 ```bash
 vi ca.conf
@@ -64,7 +64,7 @@ commonName_max                  = 64
 
 
 
-### Root CA CSR 생성
+### 1.3. Root CA CSR 생성
 
 ```bash
 openssl req -new -key ca.key -config ca.conf -out ca.csr
@@ -87,7 +87,7 @@ Common Name (eg, your name or your servers hostname) [lesstifs Self Signed CA]:
 
 
 
-### Root CA 인증서 생성
+### 1.4. Root CA 인증서 생성
 
 ```bash
 openssl x509 -req \
@@ -102,9 +102,9 @@ openssl x509 -req \
 
 
 
-## 서비스 인증서
+## 2. 서비스 인증서
 
-### 서비스 Key 생성
+### 2.1. 서비스 Key 생성
 
 ```bash
 openssl genrsa -out service.key 2048
@@ -116,7 +116,7 @@ chmod 600 service.key
 
 
 
-### 서비스 CSR 생성을 위한 Conf 파일
+### 2.2. 서비스 CSR 생성을 위한 Conf 파일
 
 ```bash
 vi service.conf
@@ -176,7 +176,7 @@ commonName_max                  = 64
 
 
 
-### 서비스 CSR 생성
+### 2.3. 서비스 CSR 생성
 
 ```bash
 openssl req -new -key service.key -config service.conf -out service.csr
@@ -200,7 +200,7 @@ Common Name (eg, your name or your servers hostname) [*.example.com]:
 
 
 
-### 서비스 인증서 생성
+### 2.4. 서비스 인증서 생성
 
 ```bash
 openssl x509 -req \
