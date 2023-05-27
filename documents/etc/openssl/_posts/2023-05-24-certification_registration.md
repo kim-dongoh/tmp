@@ -21,7 +21,7 @@ sidebar:
 1. 인증서 관련 패키지가 없는 경우 패키지 설치 및 활성화
 
    ```bash
-   sudo yum install ca-certificates
+   sudo yum install -y ca-certificates
    ```
 
    ```bash
